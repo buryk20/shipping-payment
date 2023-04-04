@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <script src="./js/main.js"></script>
 </head>
+
 <body>
     <div class="block">
         <div class="block-wpr" data-block>
-            <button  data-btn class="btn">click</button>
-            <input data-counter value="0">
-        </div>
-        <div class="block-wpr" data-block>
             <button data-btn class="btn">click</button>
             <input data-counter value="0">
         </div>
         <div class="block-wpr" data-block>
             <button data-btn class="btn">click</button>
             <input data-counter value="0">
+        </div>
+        <div class="block-wpr" data-block>
+            <button data-btn class="btn">click</button>
+            <input data-counter value="0">
+        </div>
+        <button class="clear-btn" data-clear-btn>Clear Counters</button>
+        <button class="clear-btn" data-set-counter>Set counter</button>
+        <div data-pop-up-wrp class="wrp-pop-up">
+            <form data-pop-up class="pop-up">
+                <span data-btn-close class="cross">
+                    <span class="cross__line-r"></span>
+                    <span class="cross__line-l"></span>
+                </span>
+                <label for="namberBlock">Введите номер блока</label>
+                <input type="number" name="namberBlock" id="namberBlock">
+                <label for="namberCounter">Введите значение счетчика</label>
+                <input type="number" name="namberCounter" id="namberCounter">
+                <button data-btn-click class="btn" type="button" value="Click">Click</button>
+            </form>
+        </div>
+        <div data-error class="error">
+            <p>Такого блока нет</p>
         </div>
     </div>
     <!-- <main class="shipping-payment-br">
@@ -105,4 +125,5 @@
         <p>{{__('shipping-payment.blankTransterText2')}}</p>
     </main> -->
 </body>
+
 </html>

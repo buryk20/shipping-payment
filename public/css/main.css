@@ -1,0 +1,322 @@
+@charset "UTF-8";
+.shipping-payment-br {
+  max-width: 1550px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+}
+.shipping-payment-br p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 120%;
+}
+.shipping-payment-br__title {
+  margin-bottom: 48px;
+  padding-top: 32px;
+  font-size: 28px;
+  line-height: 33px;
+}
+@media (max-width: 680px) {
+  .shipping-payment-br__title {
+    margin-bottom: 24px;
+    padding-top: 16px;
+  }
+}
+.shipping-payment-br__block-cont {
+  margin-bottom: 48px;
+  padding: 32px;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+}
+@media (max-width: 680px) {
+  .shipping-payment-br__block-cont {
+    margin-bottom: 24px;
+    padding: 16px;
+  }
+}
+.shipping-payment-br__block-cont-title {
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 120%;
+}
+.shipping-payment-br__block-cont-line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 32px;
+  display: flex;
+  background-color: #8a8a8a;
+}
+.shipping-payment-br__free {
+  color: #009b3e;
+}
+.shipping-payment-br__attention {
+  color: #eb1717;
+}
+.shipping-payment-br__wrp-img {
+  padding-top: 48px;
+  margin-bottom: 48px;
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 180px;
+  height: 20px;
+  background-color: #8a8a8a;
+  color: black;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.block-wpr {
+  display: flex;
+  gap: 32px;
+}
+
+.block {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 64px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-btn {
+  width: 180px;
+  height: 20px;
+  margin-bottom: 24px;
+  border: 1px solid #8a8a8a;
+}
+
+.wrp-pop-up {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  bottom: 0;
+  cursor: auto;
+  display: flex;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 510;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.wrp-pop-up.active {
+  opacity: 1;
+  visibility: inherit;
+  transition: 0.3s;
+}
+.wrp-pop-up.active > .pop-up {
+  opacity: 1;
+  visibility: inherit;
+  transition: 0.3s;
+}
+
+.pop-up {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.pop-up input {
+  width: 80px;
+  height: 30px;
+  margin-bottom: 24px;
+  padding: 8px;
+  border: 1px solid #8a8a8a;
+  border-radius: 8px;
+}
+
+.cross {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  z-index: 10000;
+  cursor: pointer;
+}
+.cross__line-r, .cross__line-l {
+  width: 24px;
+  height: 1px;
+  top: 18px;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+.cross__line-r {
+  transform: rotate(-45deg);
+}
+.cross__line-l {
+  transform: rotate(45deg);
+}
+
+.error {
+  width: 240px;
+  height: 60px;
+  position: absolute;
+  top: 64px;
+  right: -240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 8px;
+  transition: 0.3s;
+  background-color: #fff;
+  z-index: 111111111111111100000000000000000000000;
+}
+.error.active {
+  right: 24px;
+  transition: 0.3s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.img-svg {
+  opacity: 1;
+}
+.img-svg svg {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 none;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 14px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  cursor: pointer;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+  transition: 0.2s;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}/*# sourceMappingURL=main.css.map */
