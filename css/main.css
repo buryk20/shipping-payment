@@ -84,6 +84,34 @@
           align-items: center;
 }
 
+.btn {
+  width: 180px;
+  height: 20px;
+  background-color: #8A8A8A;
+  color: black;
+}
+
+.block-wpr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.block {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 64px;
+  gap: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 html,
 body {
   min-height: 100vh;
