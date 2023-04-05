@@ -23,12 +23,12 @@ window.onload = function() {
             } else {
                 el.value = localStorage.getItem(i);
             }
-            
+
         });
     }
 
     getStor();
-    
+
     clearBtn.addEventListener('click', function() {
         countHtml.forEach((el, index) => {
             localStorage.setItem(index, '0');
@@ -43,9 +43,14 @@ window.onload = function() {
             if(el.name === "namberBlock") {
                 if(el.value <= (countHtml.length - 1)) {
                     key = String(el.value);
-                } 
+                    el.value = '';
+                }
             } if(el.name === "namberCounter") {
                 name = el.value;
+                if(key !== undefined) {
+                    el.value = '';
+                }
+
             }
         });
 
@@ -63,9 +68,9 @@ window.onload = function() {
     });
 
     function errorFun() {
-        error.classList.add('active'); 
+        error.classList.add('active');
         setTimeout(function() {
-            error.classList.remove('active'); 
+            error.classList.remove('active');
         }, 3000);
     }
 
